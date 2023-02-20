@@ -36,7 +36,7 @@ small-api/
 
 You now have an API that runs queries based on parameters. Now, we will seed a database. We do this through POST methods.
 
-Post methods can only be done through python.
+Post methods can only be done through python. Open a jupyter notebook and have two cells: one for importing requests and another one to do the requests.post:
 
 ```python
 requests.post("http://127.0.0.1:9000/insert-into-employees", params = params)
