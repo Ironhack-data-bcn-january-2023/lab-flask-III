@@ -27,7 +27,7 @@ small-api/
     tools/
         sql_queries.py
 ```
-
+- Make sure you also have a `.env`
 - From your terminal, run: `python main.py`
 - In that terminal, you'll get feedback of your prints and the errors.
 - After the server is up and running you'll be able to go into your browser and access the endpoints you defined.
