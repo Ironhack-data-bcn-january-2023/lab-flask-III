@@ -60,6 +60,8 @@ Create and parametrize as many endpoints as you find useful. Is there some aggre
 1. Choose a database: a csv of your liking
 2. Upload that database to [free sql database](https://www.freesqldatabase.com/)
 3. Establish a connection to your database through Workbench to your db on the cloud
+4. You can now upload your table, either manually or through python. If manually doesn't work, do it through python
+6. To do it through python, you will need mysql alchemy and a connection string: `f"mysql+pymysql://{user}:{password}@sql7.freesqldataabse.com/{name}"`
 
 ### BONUS
 
