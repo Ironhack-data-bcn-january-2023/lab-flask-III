@@ -32,3 +32,20 @@ def insert_params (emp_no, birth_date, first_name, last_name, gender, hire_date)
     """
     engine.execute(query)
 
+
+def insert_one (the_table, emp_no, birth_date, first_name, last_name, gender, hire_date):
+    query = f"""
+    INSERT INTO {the_table}
+        VALUES ("{emp_no}", "{birth_date}", {first_name}, {last_name}, {gender}, {hire_date});
+    """
+    engine.execute(query)
+
+def gerards ():
+    query = f'''
+    SELECT *
+        FROM employees
+        WHERE first_name = 'Gerard';
+    '''
+    df = pd.read_sql_query(query, engine)
+    return df.to_dict(orient='records')
+
