@@ -43,7 +43,7 @@ requests.post("http://127.0.0.1:9000/insert-into-employees", params = params)
 ```
 
 1. Create a route with the endpoint: `"/insert-into-employees"`
-2. Define a function in config/sql_queries.py that that will receive as arguments whatever you want to insert.
+2. Define a function in `config/sql_queries.py` that that will receive as arguments whatever you want to insert.
 3. Call that function under another one below your route.
 4. From python, create a dictionary named params where each key you're passing is the name of the column and each value will be your inserted value. Then:
 
