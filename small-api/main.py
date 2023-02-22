@@ -32,9 +32,7 @@ def insert_params_():
     sql.insert_params (emp_no, birth_date, first_name, last_name, gender, hire_date)
     return "Inserted!"
 
-
-
-@app.route('/insert-department', methods = ["POST"])
+@app.route("/insert-departments", methods = ["POST"])
 def department_():
     dept_no= request.args['dept_no']
     dept_name=request.args['dept_name']

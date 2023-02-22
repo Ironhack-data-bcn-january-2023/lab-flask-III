@@ -17,8 +17,8 @@ def insert_params(emp_no, birth_date, first_name, last_name, gender, hire_date):
     
     engine.execute(query)
 
-def insert_dept( dept_no, dept_name):
-    query = f""" INSERT INTO employees 
+def insert_dept(dept_no, dept_name):
+    query = f""" INSERT INTO departments 
             VALUES ("{dept_no}","{dept_name}");
             """
     
